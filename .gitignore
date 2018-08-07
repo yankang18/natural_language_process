@@ -5,6 +5,7 @@ datasets
 parsed_data
 cache
 **/data
+**/models
 **/large_data
 **/checkpoints
 **/datasets
