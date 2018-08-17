@@ -28,7 +28,7 @@ class BiLSTM_CRF(BaseModel):
 		self.add_loss()
 		self.add_projection_op()
 		self.add_train_op()
-		# self.initialize_session()
+		self.initialize_session()
 
 
 	def add_placeholders(self):
@@ -136,7 +136,7 @@ class BiLSTM_CRF(BaseModel):
 
 		"""
 
-		self.initialize_session()
+		# self.initialize_session()
 
 		earlyStoppingCheckPoint.set_model(self)
 		earlyStoppingCheckPoint.on_train_begin()
