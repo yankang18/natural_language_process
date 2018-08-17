@@ -4,7 +4,7 @@ import tensorflow as tf
 
 class BaseModel(object):
 
-	def __init__():
+	def __init__(self):
 		self.sess = None
 		self.saver = None
 		self.stop_training = False
@@ -33,7 +33,7 @@ class BaseModel(object):
 
 
 
-    
+	
 
 
 

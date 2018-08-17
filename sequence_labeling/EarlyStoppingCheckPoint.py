@@ -1,17 +1,21 @@
 import numpy as np
 
-def  EarlyStoppingCheckPoint(object):
+# We create a simple class, called EarlyStoppingCheckPoint, that combines simplified version of EarlyStoping and ModelCheckPoint classes from Keras.
+# References:
+# https://keras.io/callbacks/
+# https://github.com/keras-team/keras/blob/master/keras/callbacks.py#L458
+# https://github.com/keras-team/keras/blob/master/keras/callbacks.py#L358
 
-	def __init__(self, filepath, monitor, patience):
+class EarlyStoppingCheckPoint(object):
 
-		self.filepath = filepath
+	def __init__(self, file_path, monitor, patience):
+
+		self.filepath = file_path
 		self.monitor = monitor
 		self.patience = patience
 
 		self.wait = 0
 		self.stopped_epoch = 0
-		self.best = 
-
 
 	def set_model(self, model):
 		self.model = model
